@@ -1,0 +1,3 @@
+/workspaces/epubreader/build/CMakeFiles/epubreader.dir
+/workspaces/epubreader/build/CMakeFiles/edit_cache.dir
+/workspaces/epubreader/build/CMakeFiles/rebuild_cache.dir
