@@ -1,1 +1,1 @@
-/usr/bin/c++  -Wall -Wextra CMakeFiles/epubreader.dir/src/main.cpp.o -o prod/epubreader 
+/usr/bin/c++ CMakeFiles/epubreader.dir/src/main.cpp.o -o epubreader 

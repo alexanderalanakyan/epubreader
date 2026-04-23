@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/epubreader.dir/src/main.cpp.o"
   "CMakeFiles/epubreader.dir/src/main.cpp.o.d"
-  "prod/epubreader"
-  "prod/epubreader.pdb"
+  "epubreader"
+  "epubreader.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
