@@ -529,3 +529,243 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "glfw/CMakeLists.txt:48 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-UGjfzw"
+      binary: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-UGjfzw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/epubreader/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-UGjfzw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_512ba/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_512ba.dir/build.make CMakeFiles/cmTC_512ba.dir/build
+        gmake[1]: Entering directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-UGjfzw'
+        Building C object CMakeFiles/cmTC_512ba.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_512ba.dir/src.c.o -c /workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-UGjfzw/src.c
+        Linking C executable cmTC_512ba
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_512ba.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_512ba.dir/src.c.o -o cmTC_512ba 
+        gmake[1]: Leaving directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-UGjfzw'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "glfw/src/CMakeLists.txt:70 (check_function_exists)"
+    checks:
+      - "Looking for memfd_create"
+    directories:
+      source: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-v5hO31"
+      binary: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-v5hO31"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/epubreader/glfw/CMake/modules"
+    buildResult:
+      variable: "HAVE_MEMFD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-v5hO31'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_67439/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_67439.dir/build.make CMakeFiles/cmTC_67439.dir/build
+        gmake[1]: Entering directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-v5hO31'
+        Building C object CMakeFiles/cmTC_67439.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memfd_create -o CMakeFiles/cmTC_67439.dir/CheckFunctionExists.c.o -c /workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-v5hO31/CheckFunctionExists.c
+        Linking C executable cmTC_67439
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67439.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memfd_create CMakeFiles/cmTC_67439.dir/CheckFunctionExists.c.o -o cmTC_67439 
+        gmake[1]: Leaving directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-v5hO31'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:682 (check_library_exists)"
+      - "glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
+    directories:
+      source: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-blI90z"
+      binary: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-blI90z"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/epubreader/glfw/CMake/modules"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-blI90z'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6feb4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6feb4.dir/build.make CMakeFiles/cmTC_6feb4.dir/build
+        gmake[1]: Entering directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-blI90z'
+        Building C object CMakeFiles/cmTC_6feb4.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_6feb4.dir/CheckFunctionExists.c.o -c /workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-blI90z/CheckFunctionExists.c
+        Linking C executable cmTC_6feb4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6feb4.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_6feb4.dir/CheckFunctionExists.c.o -o cmTC_6feb4  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+        gmake[1]: Leaving directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-blI90z'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:697 (check_function_exists)"
+      - "glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-qroATw"
+      binary: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-qroATw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/epubreader/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-qroATw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a9c35/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a9c35.dir/build.make CMakeFiles/cmTC_a9c35.dir/build
+        gmake[1]: Entering directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-qroATw'
+        Building C object CMakeFiles/cmTC_a9c35.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_a9c35.dir/CheckFunctionExists.c.o -c /workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-qroATw/CheckFunctionExists.c
+        Linking C executable cmTC_a9c35
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9c35.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_a9c35.dir/CheckFunctionExists.c.o -o cmTC_a9c35 
+        gmake[1]: Leaving directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-qroATw'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:711 (check_function_exists)"
+      - "glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-4RISQc"
+      binary: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-4RISQc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/epubreader/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-4RISQc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_04d3a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_04d3a.dir/build.make CMakeFiles/cmTC_04d3a.dir/build
+        gmake[1]: Entering directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-4RISQc'
+        Building C object CMakeFiles/cmTC_04d3a.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_04d3a.dir/CheckFunctionExists.c.o -c /workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-4RISQc/CheckFunctionExists.c
+        Linking C executable cmTC_04d3a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04d3a.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_04d3a.dir/CheckFunctionExists.c.o -o cmTC_04d3a 
+        gmake[1]: Leaving directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-4RISQc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:720 (check_function_exists)"
+      - "glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-rWYTAv"
+      binary: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-rWYTAv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/epubreader/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-rWYTAv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_37ae9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_37ae9.dir/build.make CMakeFiles/cmTC_37ae9.dir/build
+        gmake[1]: Entering directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-rWYTAv'
+        Building C object CMakeFiles/cmTC_37ae9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_37ae9.dir/CheckFunctionExists.c.o -c /workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-rWYTAv/CheckFunctionExists.c
+        Linking C executable cmTC_37ae9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37ae9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_37ae9.dir/CheckFunctionExists.c.o -o cmTC_37ae9 
+        gmake[1]: Leaving directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-rWYTAv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:729 (check_function_exists)"
+      - "glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-PrUaED"
+      binary: "/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-PrUaED"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/epubreader/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-PrUaED'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_61987/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_61987.dir/build.make CMakeFiles/cmTC_61987.dir/build
+        gmake[1]: Entering directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-PrUaED'
+        Building C object CMakeFiles/cmTC_61987.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_61987.dir/CheckFunctionExists.c.o -c /workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-PrUaED/CheckFunctionExists.c
+        Linking C executable cmTC_61987
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61987.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_61987.dir/CheckFunctionExists.c.o -o cmTC_61987 
+        gmake[1]: Leaving directory '/workspaces/epubreader/build/CMakeFiles/CMakeScratch/TryCompile-PrUaED'
+        
+      exitCode: 0
+...

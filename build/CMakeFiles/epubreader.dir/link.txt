@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/epubreader.dir/src/main.cpp.o -o epubreader 
+/usr/bin/c++ CMakeFiles/epubreader.dir/src/main.cpp.o -o epubreader  glfw/src/libglfw3.a /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so 
