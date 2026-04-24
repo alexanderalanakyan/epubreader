@@ -2,6 +2,12 @@
 using namespace std;
 
 int main() {
-   
-    return 0;
+    if(!glfwInit()) {
+        return -1;
+    }
+  GLFWwindow* window = glfwCreateWindow(640, 480, "My Title", NULL, NULL);
+if (!window)
+{
+    // Window or OpenGL context creation failed
+}
 }
