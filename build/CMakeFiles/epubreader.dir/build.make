@@ -73,15 +73,15 @@ CMakeFiles/epubreader.dir/src/main.cpp.o: CMakeFiles/epubreader.dir/flags.make
 CMakeFiles/epubreader.dir/src/main.cpp.o: /workspaces/epubreader/src/main.cpp
 CMakeFiles/epubreader.dir/src/main.cpp.o: CMakeFiles/epubreader.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/epubreader/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/epubreader.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/epubreader.dir/src/main.cpp.o -MF CMakeFiles/epubreader.dir/src/main.cpp.o.d -o CMakeFiles/epubreader.dir/src/main.cpp.o -c /workspaces/epubreader/src/main.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/epubreader.dir/src/main.cpp.o -MF CMakeFiles/epubreader.dir/src/main.cpp.o.d -o CMakeFiles/epubreader.dir/src/main.cpp.o -c /workspaces/epubreader/src/main.cpp
 
 CMakeFiles/epubreader.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/epubreader.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/epubreader/src/main.cpp > CMakeFiles/epubreader.dir/src/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/epubreader/src/main.cpp > CMakeFiles/epubreader.dir/src/main.cpp.i
 
 CMakeFiles/epubreader.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/epubreader.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/epubreader/src/main.cpp -o CMakeFiles/epubreader.dir/src/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/epubreader/src/main.cpp -o CMakeFiles/epubreader.dir/src/main.cpp.s
 
 # Object files for target epubreader
 epubreader_OBJECTS = \
