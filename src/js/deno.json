@@ -1,4 +1,5 @@
 {
+  "checkJs": "true",
   "nodeModulesDir": "auto",
   "tasks": {
     "dev": "deno run --watch main.ts"
